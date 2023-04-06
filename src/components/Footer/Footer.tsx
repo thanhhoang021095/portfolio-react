@@ -2,7 +2,7 @@ import React, { FC } from "react";
 
 export const Footer: FC = () => {
   return (
-    <div className="bg-slate-800 w-full">
+    <div data-testid="footer" className="bg-slate-800 w-full">
       <div className="pt-16 pb-8 md:px-40 mx-auto text-center text-white">
         <div className="grid lg:grid-cols-12 md:gap-3">
           <div className="text-center lg:text-left lg:col-span-5 md:col-span-12 sm:pt-8">

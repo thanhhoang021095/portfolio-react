@@ -21,7 +21,7 @@ export const Header: FC = () => {
   const onScrollToElement = useCallback(handleScrollToElement, []);
 
   return (
-    <div className="fixed bg-white top-0 w-full shadow-md z-10 opacity-95">
+    <div data-testid="header" className="fixed bg-white top-0 w-full shadow-md z-10 opacity-95">
       <div className="relative px-14 py-6 flex flex-col md:flex-row justify-between items-center">
         <div
           className="cursor-pointer"

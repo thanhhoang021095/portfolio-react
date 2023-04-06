@@ -8,7 +8,7 @@ export const PageLayout: FC = () => {
   return (
     <>
       <Header />
-      <div className="relative md:pt-40 pt-60 z-0">
+      <div className="relative md:pt-40 pt-60 z-0" data-testid="main-content">
         <MainContent />
       </div>
       <Footer />

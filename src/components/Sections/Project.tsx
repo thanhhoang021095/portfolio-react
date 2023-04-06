@@ -8,7 +8,7 @@ const cardProjects = [
   {
     prjName: "omnishop",
     imgSrc: "illustrations/project_1.png",
-    prjLink: "https://smarttv.shoppingtv.vn/",
+    prjLink: "https://smarttv.fptplayshopping.vn/",
   },
   {
     prjName: "parcel_public",
@@ -31,14 +31,16 @@ export const Project: FC<Props> = () => {
           <hr className="rounded w-3/4 border-5 bg-cyan-600 my-2 mx-auto h-1.5"></hr>
         </div>
         <p className="text-base">
-          These are some of my best projects. I have built these with React,
-          MERN and vanilla CSS. Check them out.
+          These are some of my projects which I had joined as Frontend Developer.
         </p>
         <br></br>
 
         <div className="grid md:grid-cols-12 xs:grid-cols-1 gap-7">
           {cardProjects.map(({ prjName, imgSrc, prjLink }) => (
-            <div key={prjName} className="md:col-span-6 xs:col-span-12 xl:col-span-4">
+            <div
+              key={prjName}
+              className="md:col-span-6 xs:col-span-12 xl:col-span-4"
+            >
               <Card cardLink={prjLink}>
                 <img
                   src={imgSrc}

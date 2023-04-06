@@ -9,6 +9,7 @@ type Props = {
 export const ScrollTopButton: FC<Props> = ({ addClass }): JSX.Element => {
   return (
     <button
+      data-testid="scroll-top-button"
       className={classNames(
         "fixed bottom-7 right-9 rounded-full shadow-lg shadow-cyan-600/50",
         addClass
